@@ -3,47 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name Portfolio</title>
+  <title>Supriya Kumari | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <nav class="navbar container">
+    <a href="#home" class="logo">Supriya Kumari</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+  </nav>
+</header>
 
-  <section id="about">
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero container">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Supriya Kumari</span></h1>
+      <p>Final-year B.Tech student</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/supriya.jpg.jpg" alt="Supriya Kumari Photo" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about container">
     <h2>About Me</h2>
-    <p>This is where your bio goes.</p>
+    <p>I’m Supriya Kumari, a final-year B.Tech student passionate about frontend development and crafting intuitive user interfaces. Skilled in Java, HTML, CSS, and JavaScript, I enjoy transforming designs into responsive and engaging websites. Alongside frontend, I have a strong foundation in core computer science subjects like Data Structures & Algorithms (DSA), OOPS, DBMS, Operating Systems, and Computer Networks. I am a quick learner, disciplined, and adept at time management, always striving to adapt and grow in fast-paced environments.</p>
   </section>
 
-  <section id="skills">
+  <!-- Skills Section -->
+  <section id="skills" class="skills container">
     <h2>Skills</h2>
-    <ul>
-      <li>Java</li>
-      <li>DSA</li>
-      <li>HTML, CSS, JS</li>
-    </ul>
+    <div class="skills-list">
+      <div class="skill">
+        <h3>Java</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>DSA</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>HTML, CSS, JS</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%"></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="projects container">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
+    <ul class="project-links">
+      <li><a href="https://github.com/supriyakumari19/WordCounter.git" target="_blank" rel="noopener">WordCounter</a></li>
+      <li><a href="https://github.com/supriyakumari19/Quiz.git" target="_blank" rel="noopener">Quiz App</a></li>
     </ul>
   </section>
 
-  <section id="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact container">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
+    <p><strong>Email:</strong> <a href="mailto:supriyanandan1111@gmail.com">supriyanandan1111@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/supriya-kumari-hit" target="_blank" rel="noopener">linkedin.com/in/supriya-kumari-hit</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+916200765378">+91-6200765378</a></p>
   </section>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+  <p>© 2025 Supriya Kumari. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
